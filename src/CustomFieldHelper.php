@@ -14,10 +14,10 @@ class CustomFieldHelper
 {
     /**
      * получить значение текущего максимального id в массиве
-     * @param array $custom_fields
+     * @param array|null $custom_fields
      * @return int
      */
-    public static function getMaxId(array $custom_fields) : int
+    public static function getMaxId(array $custom_fields = null) : int
     {
         if (is_null($custom_fields)){
             return 0;
@@ -35,11 +35,11 @@ class CustomFieldHelper
      * если полей нет, просто добавляет
      * если поля есть, мерджит с теми что были + проставляет итерируемые id
      * @param array $custom_fields_array
-     * @param array $custom_fields
+     * @param array|null $custom_fields
      * @return array
      * @throws Exception
      */
-    public static function addCustomFields(array $custom_fields_array, array $custom_fields) : array
+    public static function addCustomFields(array $custom_fields_array, array $custom_fields = null) : array
     {
         $nextId = static::getMaxId($custom_fields); // получим значение текущего максимального id
         foreach ($custom_fields_array as $key => $item){ // переберем массив новых полей и сформируем модели + проставим ID
