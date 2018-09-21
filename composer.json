@@ -1,0 +1,42 @@
+{
+  "name": "sorokinmedia/yii2-custom-fields",
+  "description": "Custom fields(json) component for Yii2",
+  "type": "yii2-extension",
+  "keywords": ["yii2", "yii 2", "custom fields"],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Ruslan Gilyazetdinov",
+      "email": "ma3obblu@gmail.com",
+      "homepage": "https://vk.com/ma3obblu"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/sorokinmedia/yii2-custom-fields/issues?state=open",
+    "source": "https://github.com/sorokinmedia/yii2-custom-fields"
+  },
+  "require": {
+    "yiisoft/yii2": ">=2.0.6",
+    "sorokinmedia/yii2-ar-relations": "*",
+    "sorokinmedia/yii2-helpers": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "sorokinmedia\\custom_fields\\": "src/",
+      "sorokinmedia\\custom_fields\\entities\\": "src/entities/",
+      "sorokinmedia\\custom_fields\\forms\\": "src/forms/",
+      "sorokinmedia\\custom_fields\\handlers\\": "src/handlers/",
+      "sorokinmedia\\custom_fields\\helpers\\": "src/helpers/",
+      "sorokinmedia\\custom_fields\\tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  }
+}
