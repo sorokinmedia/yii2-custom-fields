@@ -1,5 +1,7 @@
 # yii2-custom-fields
 
+[![Total Downloads](https://img.shields.io/packagist/dt/sorokinmedia/yii2-custom-fields.svg)](https://packagist.org/packages/sorokinmedia/yii2-custom-fields)
+
 ***
 Sorokin.Media repository
 ***
